@@ -1,7 +1,5 @@
-
 'use client';
 import React, { useState } from 'react';
-import styles from '../page.module.css'
 
 const TabComponent = () => {
     const [activeTab, setActiveTab] = useState('tab1');
@@ -83,7 +81,7 @@ const TabComponent = () => {
     };
 
     return (
-        <div className={styles.table_content}>
+        <div>
             <div className="text-center font-light mb-4">
                 <h2>DEPARTMENTS IN FACULTY OF ENGINEERING</h2>
             </div>
@@ -91,7 +89,7 @@ const TabComponent = () => {
                 {tabs.map(tab => (
                     <button
                         key={tab.id}
-                        className={` border-2 border-gray-300 p-2.5 rounded-md hover:bg-blue-700 hover:scale-105 ${activeTab === tab.id ? ' bg-blue-600 text-white' : ''}`}
+                        className={`border-2 border-gray-300 p-2.5 rounded-md hover:bg-blue-700 hover:scale-105 ${activeTab === tab.id ? 'bg-blue-600 text-white' : ''}`}
                         onClick={() => setActiveTab(tab.id)}
                     >
                         {tab.label}

@@ -17,7 +17,7 @@ return (
 
         <Toggle/>
             )}
-        <div className='flex items-center'>
+        <div>
             <Link href="/">
                 <div className={styles.logo}>
                 <Image
